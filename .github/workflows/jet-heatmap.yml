@@ -1,0 +1,36 @@
+name: Sync live contribution heatmap
+
+on:
+  workflow_dispatch:
+
+  schedule:
+    - cron: "17 4 * * *"
+
+permissions:
+  contents: write
+
+jobs:
+  sync-contributions:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout profile repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Generate contribution SVG
+        env:
+          GH_USERNAME: ${{ github.repository_owner }}
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          OUTPUT_PATH: dist/github-jet.svg
+        run: node generate.mjs
+
+      - name: Commit updated contribution SVG
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "chore(profile): sync contribution heatmap"
+          file_pattern: dist/github-jet.svg
