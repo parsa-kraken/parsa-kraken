@@ -1,8 +1,7 @@
-name: Sync live contribution heatmap
+name: Sync live contribution snake
 
 on:
   workflow_dispatch:
-
   schedule:
     - cron: "17 4 * * *"
 
@@ -10,27 +9,23 @@ permissions:
   contents: write
 
 jobs:
-  sync-contributions:
+  generate-snake:
     runs-on: ubuntu-latest
 
     steps:
       - name: Checkout profile repository
         uses: actions/checkout@v4
 
-      - name: Set up Node.js
-        uses: actions/setup-node@v4
+      - name: Generate contribution snake
+        uses: Platane/snk/svg-only@v3
         with:
-          node-version: 20
+          github_user_name: ${{ github.repository_owner }}
+          outputs: |
+            dist/github-snake.svg?palette=github-light&color_snake=#facc15&color_dots=#ebedf0,#dcfce7,#86efac,#22c55e,#15803d
+            dist/github-snake-dark.svg?palette=github-dark&color_snake=#facc15&color_dots=#0d1117,#052e16,#166534,#22c55e,#4ade80
 
-      - name: Generate contribution SVG
-        env:
-          GH_USERNAME: ${{ github.repository_owner }}
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          OUTPUT_PATH: dist/github-jet.svg
-        run: node generate.mjs
-
-      - name: Commit updated contribution SVG
+      - name: Commit updated snake SVGs
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: "chore(profile): sync contribution heatmap"
-          file_pattern: dist/github-jet.svg
+          commit_message: "chore(profile): sync contribution snake"
+          file_pattern: "dist/github-snake*.svg"
