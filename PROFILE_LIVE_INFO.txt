@@ -1,0 +1,6 @@
+Profile owner: parsa-kraken
+Main card: light.svg / dark.svg
+Live contributions: dist/github-jet.svg
+Automatic sync: .github/workflows/jet-heatmap.yml
+Generator: generate.mjs
+Theme: hacker green + red accent
