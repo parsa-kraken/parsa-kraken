@@ -1,0 +1,133 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1664" height="936" viewBox="0 0 1664 936" preserveAspectRatio="xMidYMid meet">
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#020b07"/>
+    <stop offset=".48" stop-color="#061812"/>
+    <stop offset="1" stop-color="#02100a"/>
+  </linearGradient>
+  <linearGradient id="panel" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#102a1d" stop-opacity=".96"/>
+    <stop offset="1" stop-color="#06150e" stop-opacity=".97"/>
+  </linearGradient>
+  <linearGradient id="neon" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0" stop-color="#25ff78" stop-opacity="0"/>
+    <stop offset=".5" stop-color="#8affb4"/>
+    <stop offset="1" stop-color="#25ff78" stop-opacity="0"/>
+  </linearGradient>
+  <linearGradient id="greenText" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0" stop-color="#8affb4"/>
+    <stop offset=".5" stop-color="#39ff82"/>
+    <stop offset="1" stop-color="#8affb4"/>
+  </linearGradient>
+  <radialGradient id="halo">
+    <stop offset="0" stop-color="#39ff82" stop-opacity=".28"/>
+    <stop offset=".45" stop-color="#1dff6b" stop-opacity=".08"/>
+    <stop offset="1" stop-color="#1dff6b" stop-opacity="0"/>
+  </radialGradient>
+  <radialGradient id="orb">
+    <stop offset="0" stop-color="#39ff82" stop-opacity=".55"/>
+    <stop offset="1" stop-color="#1dff6b" stop-opacity="0"/>
+  </radialGradient>
+  <linearGradient id="hero" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0" stop-color="#06150e" stop-opacity=".95"/>
+    <stop offset=".5" stop-color="#0a2218" stop-opacity=".85"/>
+    <stop offset="1" stop-color="#06150e" stop-opacity=".95"/>
+  </linearGradient>
+  <linearGradient id="scan" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0" stop-color="#25ff78" stop-opacity="0"/>
+    <stop offset=".5" stop-color="#8affb4"/>
+    <stop offset="1" stop-color="#25ff78" stop-opacity="0"/>
+  </linearGradient>
+  <pattern id="grid" width="42" height="42" patternUnits="userSpaceOnUse">
+    <path d="M42 0H0V42" fill="none" stroke="#6aff9c" stroke-opacity=".055"/>
+    <circle cx="0" cy="0" r="1" fill="#8affb4" opacity=".18"/>
+  </pattern>
+  <pattern id="smallGrid" width="12" height="12" patternUnits="userSpaceOnUse">
+    <path d="M12 0H0V12" fill="none" stroke="#7bffa9" stroke-opacity=".022"/>
+  </pattern>
+  <filter id="glow" x="-100%" y="-100%" width="300%" height="300%">
+    <feGaussianBlur stdDeviation="5" result="b"/>
+    <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+  <filter id="softGlow" x="-100%" y="-100%" width="300%" height="300%">
+    <feGaussianBlur stdDeviation="16"/>
+  </filter>
+  <filter id="tinyGlow" x="-100%" y="-100%" width="300%" height="300%">
+    <feGaussianBlur stdDeviation="2"/>
+  </filter>
+
+  <!-- Tech badge (shinobi style) -->
+  <g id="badge">
+    <rect x="-31" y="-31" width="62" height="62" rx="15"
+          fill="#0c2117" stroke="#25ff78" stroke-opacity=".28"/>
+    <rect x="-27" y="-27" width="54" height="54" rx="12"
+          fill="none" stroke="#8affb4" stroke-opacity=".08"/>
+    <circle r="21" fill="none" stroke="#52ff91" stroke-opacity=".11"/>
+  </g>
+
+  <!-- Pulsing status dot -->
+  <g id="status">
+    <circle r="4" fill="#73ffa5" filter="url(#tinyGlow)">
+      <animate attributeName="r" values="2.5;5;2.5" dur="1.7s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values=".35;1;.35" dur="1.7s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- Corner decorations -->
+  <g id="cornerTL">
+    <path d="M0 30 V0 H30" fill="none" stroke="#25ff78" stroke-width="1.5" stroke-opacity=".5"/>
+  </g>
+  <g id="cornerTR">
+    <path d="M0 30 V0 H-30" fill="none" stroke="#25ff78" stroke-width="1.5" stroke-opacity=".5"/>
+  </g>
+  <g id="cornerBL">
+    <path d="M0 -30 V0 H30" fill="none" stroke="#25ff78" stroke-width="1.5" stroke-opacity=".5"/>
+  </g>
+  <g id="cornerBR">
+    <path d="M0 -30 V0 H-30" fill="none" stroke="#25ff78" stroke-width="1.5" stroke-opacity=".5"/>
+  </g>
+</defs>
+<rect width="1664" height="936" fill="url(#bg)"/>
+<rect width="1664" height="936" fill="url(#grid)">
+  <animateTransform attributeName="transform" type="translate"
+    values="0 0;42 42;0 0" dur="16s" repeatCount="indefinite"/>
+</rect>
+<rect width="1664" height="936" fill="url(#smallGrid)" opacity=".6">
+  <animateTransform attributeName="transform" type="translate"
+    values="0 0;-12 12;0 0" dur="9s" repeatCount="indefinite"/>
+</rect>
+<ellipse cx="832" cy="270" rx="540" ry="300" fill="url(#halo)" filter="url(#softGlow)">
+  <animate attributeName="rx" values="460;600;480;570;460" dur="9s" repeatCount="indefinite"/>
+  <animate attributeName="ry" values="250;340;270;320;250" dur="9s" repeatCount="indefinite"/>
+  <animate attributeName="opacity" values=".55;.9;.48;.8;.55" dur="9s" repeatCount="indefinite"/>
+</ellipse>
+<g font-family="Arial, Helvetica, sans-serif" text-anchor="middle">
+  <text x="832" y="84" fill="#dffff0" font-size="48" font-weight="700" letter-spacing="1">
+    TECHNOLOGY UNIVERSE
+    <animate attributeName="opacity" values=".84;1;.84" dur="4s" repeatCount="indefinite"/>
+  </text>
+  <text x="832" y="123" fill="#6cff9d" font-size="15" letter-spacing="4" opacity=".72">
+    ENGINEERING STACK / SYSTEMS / INFRASTRUCTURE / INTELLIGENCE
+  </text>
+  <rect x="575" y="146" width="514" height="1.5" fill="url(#neon)">
+    <animate attributeName="width" values="350;620;350" dur="5s" repeatCount="indefinite"/>
+    <animate attributeName="x" values="657;522;657" dur="5s" repeatCount="indefinite"/>
+  </rect>
+</g>
+<!-- Floating header particles -->
+<g fill="#8affb4" filter="url(#tinyGlow)">
+  <circle cx="270" cy="90" r="2"><animate attributeName="cy" values="90;72;90" dur="3s" repeatCount="indefinite"/></circle>
+  <circle cx="1390" cy="105" r="1.5"><animate attributeName="cy" values="105;128;105" dur="4s" repeatCount="indefinite"/></circle>
+  <circle cx="460" cy="142" r="1.3"><animate attributeName="cx" values="460;485;460" dur="3.5s" repeatCount="indefinite"/></circle>
+  <circle cx="1190" cy="135" r="1.7"><animate attributeName="cx" values="1190;1165;1190" dur="4.2s" repeatCount="indefinite"/></circle>
+</g>
+<use href="#cornerTL" transform="translate(20,20)"/>
+<use href="#cornerTR" transform="translate(1644,20)"/>
+<use href="#cornerBL" transform="translate(20,916)"/>
+<use href="#cornerBR" transform="translate(1644,916)"/>
+<g font-family="Arial, Helvetica, sans-serif"><g transform="translate(40 190)"><rect width="350" height="650" rx="22" fill="#25ff78" opacity=".035" filter="url(#softGlow)"/><rect x="4" y="4" width="342" height="642" rx="20" fill="url(#panel)" stroke="#4bff8a" stroke-opacity=".30"/><rect x="4" y="4" width="342" height="6" rx="3" fill="#8affb4" opacity=".5"><animate attributeName="opacity" values=".25;.8;.25" dur="3.5s" begin="0.0s" repeatCount="indefinite"/></rect><text x="28" y="46" fill="#65ff9b" font-size="12" letter-spacing="3">01 / INTERFACE</text><text x="28" y="88" fill="#edfff4" font-size="31" font-weight="700">FRONTEND</text><text x="28" y="115" fill="#75ad8c" font-size="12">Experience • Components • Interaction</text><g transform="translate(274 73)" fill="none" stroke="#8affb4"><circle r="39" stroke-opacity=".14" stroke-dasharray="3 8"><animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="8s" repeatCount="indefinite"/></circle><circle r="25" stroke-opacity=".25"><animate attributeName="r" values="21;29;21" dur="2.4s" begin="0.0s" repeatCount="indefinite"/></circle><path d="M-17 0H17M0-17V17" stroke-opacity=".28"/><circle r="4" fill="#8affb4" stroke="none"><animate attributeName="r" values="2;6;2" dur="1.5s" begin="0.0s" repeatCount="indefinite"/></circle></g><g transform="translate(53 205)"><rect x="-25" y="-25" width="50" height="50" rx="12" fill="#0c2117" stroke="#8affb4" stroke-opacity=".28"/><text text-anchor="middle" y="5" fill="#8affb4" font-family="monospace" font-size="11" font-weight="700">RE</text></g><g transform="translate(117 205)"><rect x="-25" y="-25" width="50" height="50" rx="12" fill="#0c2117" stroke="#8affb4" stroke-opacity=".28"/><text text-anchor="middle" y="5" fill="#8affb4" font-family="monospace" font-size="11" font-weight="700">N</text></g><g transform="translate(181 205)"><rect x="-25" y="-25" width="50" height="50" rx="12" fill="#0c2117" stroke="#8affb4" stroke-opacity=".28"/><text text-anchor="middle" y="5" fill="#8affb4" font-family="monospace" font-size="11" font-weight="700">TS</text></g><g transform="translate(53 269)"><rect x="-25" y="-25" width="50" height="50" rx="12" fill="#0c2117" stroke="#8affb4" stroke-opacity=".28"/><text text-anchor="middle" y="5" fill="#8affb4" font-family="monospace" font-size="11" font-weight="700">V</text></g><g transform="translate(117 269)"><rect x="-25" y="-25" width="50" height="50" rx="12" fill="#0c2117" stroke="#8affb4" stroke-opacity=".28"/><text text-anchor="middle" y="5" fill="#8affb4" font-family="monospace" font-size="11" font-weight="700">NG</text></g><g transform="translate(181 269)"><rect x="-25" y="-25" width="50" height="50" rx="12" fill="#0c2117" stroke="#8affb4" stroke-opacity=".28"/><text text-anchor="middle" y="5" fill="#8affb4" font-family="monospace" font-size="11" font-weight="700">TW</text></g><g transform="translate(53 333)"><rect x="-25" y="-25" width="50" height="50" rx="12" fill="#0c2117" stroke="#8affb4" stroke-opacity=".28"/><text text-anchor="middle" y="5" fill="#8affb4" font-family="monospace" font-size="11" font-weight="700">SCSS</text></g><line x1="28" y1="366" x2="322" y2="366" stroke="#8affb4" stroke-width="0.5" stroke-opacity=".2"/><text x="28" y="382" fill="#8affb4" font-size="10" letter-spacing="1.5" font-family="monospace" opacity=".8">CORE TOOLCHAIN</text><text x="28" y="404" fill="#edfff4" font-size="12">React</text><text x="175" y="404" fill="#edfff4" font-size="12">Next.js</text><text x="28" y="426" fill="#edfff4" font-size="12">TypeScript</text><text x="175" y="426" fill="#edfff4" font-size="12">Vue.js 3</text><text x="28" y="448" fill="#edfff4" font-size="12">Tailwind</text><text x="175" y="448" fill="#edfff4" font-size="12">Three.js</text><line x1="28" y1="570" x2="322" y2="570" stroke="#8affb4" stroke-width="0.5" stroke-opacity=".15"/><text x="28" y="590" fill="#75ad8c" font-size="10" letter-spacing="1" font-family="monospace">STATUS</text><text x="28" y="608" fill="#edfff4" font-size="13" font-weight="600" letter-spacing="0.5">COMPONENTS ONLINE</text><circle cx="318" cy="603" r="5" fill="#8affb4" filter="url(#tinyGlow)"><animate attributeName="r" values="3;6;3" dur="1.7s" repeatCount="indefinite"/><animate attributeName="opacity" values=".5;1;.5" dur="1.7s" repeatCount="indefinite"/></circle><rect x="28" y="620" width="294" height="4" rx="2" fill="rgba(255,255,255,0.08)"/><rect x="28" y="620" width="0" height="4" rx="2" fill="#8affb4" filter="url(#glow)"><animate attributeName="width" from="0" to="249" dur="1.6s" begin="0.4s" fill="freeze" calcMode="spline" keySplines="0.25 0.1 0.25 1"/></rect></g><g transform="translate(451 190)"><rect width="350" height="650" rx="22" fill="#25ff78" opacity=".035" filter="url(#softGlow)"/><rect x="4" y="4" width="342" height="642" rx="20" fill="url(#panel)" stroke="#4bff8a" stroke-opacity=".30"/><rect x="4" y="4" width="342" height="6" rx="3" fill="#7dffaa" opacity=".5"><animate attributeName="opacity" values=".25;.8;.25" dur="3.5s" begin="0.4s" repeatCount="indefinite"/></rect><text x="28" y="46" fill="#65ff9b" font-size="12" letter-spacing="3">02 / LOGIC</text><text x="28" y="88" fill="#edfff4" font-size="31" font-weight="700">BACKEND</text><text x="28" y="115" fill="#75ad8c" font-size="12">APIs • Services • Distributed Systems</text><g transform="translate(274 73)" fill="none" stroke="#7dffaa"><circle r="39" stroke-opacity=".14" stroke-dasharray="3 8"><animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="8s" repeatCount="indefinite"/></circle><circle r="25" stroke-opacity=".25"><animate attributeName="r" values="21;29;21" dur="2.4s" begin="0.3s" repeatCount="indefinite"/></circle><path d="M-17 0H17M0-17V17" stroke-opacity=".28"/><circle r="4" fill="#8affb4" stroke="none"><animate attributeName="r" values="2;6;2" dur="1.5s" begin="0.2s" repeatCount="indefinite"/></circle></g><g transform="translate(53 205)"><rect x="-25" y="-25" width="50" height="50" rx="12" fill="#0c2117" stroke="#7dffaa" stroke-opacity=".28"/><text text-anchor="middle" y="5" fill="#7dffaa" font-family="monospace" font-size="11" font-weight="700">JS</text></g><g transform="translate(117 205)"><rect x="-25" y="-25" width="50" height="50" rx="12" fill="#0c2117" stroke="#7dffaa" stroke-opacity=".28"/><text text-anchor="middle" y="5" fill="#7dffaa" font-family="monospace" font-size="11" font-weight="700">PY</text></g><g transform="translate(181 205)"><rect x="-25" y="-25" width="50" height="50" rx="12" fill="#0c2117" stroke="#7dffaa" stroke-opacity=".28"/><text text-anchor="middle" y="5" fill="#7dffaa" font-family="monospace" font-size="11" font-weight="700">DJ</text></g><g transform="translate(53 269)"><rect x="-25" y="-25" width="50" height="50" rx="12" fill="#0c2117" stroke="#7dffaa" stroke-opacity=".28"/><text text-anchor="middle" y="5" fill="#7dffaa" font-family="monospace" font-size="11" font-weight="700">FL</text></g><g transform="translate(117 269)"><rect x="-25" y="-25" width="50" height="50" rx="12" fill="#0c2117" stroke="#7dffaa" stroke-opacity=".28"/><text text-anchor="middle" y="5" fill="#7dffaa" font-family="monospace" font-size="11" font-weight="700">API</text></g><g transform="translate(181 269)"><rect x="-25" y="-25" width="50" height="50" rx="12" fill="#0c2117" stroke="#7dffaa" stroke-opacity=".28"/><text text-anchor="middle" y="5" fill="#7dffaa" font-family="monospace" font-size="11" font-weight="700">μSVC</text></g><line x1="28" y1="366" x2="322" y2="366" stroke="#7dffaa" stroke-width="0.5" stroke-opacity=".2"/><text x="28" y="382" fill="#7dffaa" font-size="10" letter-spacing="1.5" font-family="monospace" opacity=".8">CORE TOOLCHAIN</text><text x="28" y="404" fill="#edfff4" font-size="12">Node.js</text><text x="175" y="404" fill="#edfff4" font-size="12">Python</text><text x="28" y="426" fill="#edfff4" font-size="12">Django</text><text x="175" y="426" fill="#edfff4" font-size="12">FastAPI</text><text x="28" y="448" fill="#edfff4" font-size="12">REST APIs</text><text x="175" y="448" fill="#edfff4" font-size="12">GraphQL</text><line x1="28" y1="570" x2="322" y2="570" stroke="#7dffaa" stroke-width="0.5" stroke-opacity=".15"/><text x="28" y="590" fill="#75ad8c" font-size="10" letter-spacing="1" font-family="monospace">STATUS</text><text x="28" y="608" fill="#edfff4" font-size="13" font-weight="600" letter-spacing="0.5">SERVICES SYNCHRONIZED</text><circle cx="318" cy="603" r="5" fill="#7dffaa" filter="url(#tinyGlow)"><animate attributeName="r" values="3;6;3" dur="1.7s" repeatCount="indefinite"/><animate attributeName="opacity" values=".5;1;.5" dur="1.7s" repeatCount="indefinite"/></circle><rect x="28" y="620" width="294" height="4" rx="2" fill="rgba(255,255,255,0.08)"/><rect x="28" y="620" width="0" height="4" rx="2" fill="#7dffaa" filter="url(#glow)"><animate attributeName="width" from="0" to="264" dur="1.6s" begin="0.6000000000000001s" fill="freeze" calcMode="spline" keySplines="0.25 0.1 0.25 1"/></rect></g><g transform="translate(862 190)"><rect width="350" height="650" rx="22" fill="#25ff78" opacity=".035" filter="url(#softGlow)"/><rect x="4" y="4" width="342" height="642" rx="20" fill="url(#panel)" stroke="#4bff8a" stroke-opacity=".30"/><rect x="4" y="4" width="342" height="6" rx="3" fill="#25ff78" opacity=".5"><animate attributeName="opacity" values=".25;.8;.25" dur="3.5s" begin="0.8s" repeatCount="indefinite"/></rect><text x="28" y="46" fill="#65ff9b" font-size="12" letter-spacing="3">03 / INTELLIGENCE</text><text x="28" y="88" fill="#edfff4" font-size="31" font-weight="700">AI / ML</text><text x="28" y="115" fill="#75ad8c" font-size="12">Vision • Learning • Inference</text><g transform="translate(274 73)" fill="none" stroke="#25ff78"><circle r="39" stroke-opacity=".14" stroke-dasharray="3 8"><animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="8s" repeatCount="indefinite"/></circle><circle r="25" stroke-opacity=".25"><animate attributeName="r" values="21;29;21" dur="2.4s" begin="0.6s" repeatCount="indefinite"/></circle><path d="M-17 0H17M0-17V17" stroke-opacity=".28"/><circle r="4" fill="#8affb4" stroke="none"><animate attributeName="r" values="2;6;2" dur="1.5s" begin="0.4s" repeatCount="indefinite"/></circle></g><g transform="translate(53 205)"><rect x="-25" y="-25" width="50" height="50" rx="12" fill="#0c2117" stroke="#25ff78" stroke-opacity=".28"/><text text-anchor="middle" y="5" fill="#25ff78" font-family="monospace" font-size="11" font-weight="700">CV</text></g><g transform="translate(117 205)"><rect x="-25" y="-25" width="50" height="50" rx="12" fill="#0c2117" stroke="#25ff78" stroke-opacity=".28"/><text text-anchor="middle" y="5" fill="#25ff78" font-family="monospace" font-size="11" font-weight="700">ML</text></g><g transform="translate(181 205)"><rect x="-25" y="-25" width="50" height="50" rx="12" fill="#0c2117" stroke="#25ff78" stroke-opacity=".28"/><text text-anchor="middle" y="5" fill="#25ff78" font-family="monospace" font-size="11" font-weight="700">DL</text></g><g transform="translate(53 269)"><rect x="-25" y="-25" width="50" height="50" rx="12" fill="#0c2117" stroke="#25ff78" stroke-opacity=".28"/><text text-anchor="middle" y="5" fill="#25ff78" font-family="monospace" font-size="11" font-weight="700">PT</text></g><g transform="translate(117 269)"><rect x="-25" y="-25" width="50" height="50" rx="12" fill="#0c2117" stroke="#25ff78" stroke-opacity=".28"/><text text-anchor="middle" y="5" fill="#25ff78" font-family="monospace" font-size="11" font-weight="700">TF</text></g><g transform="translate(181 269)"><rect x="-25" y="-25" width="50" height="50" rx="12" fill="#0c2117" stroke="#25ff78" stroke-opacity=".28"/><text text-anchor="middle" y="5" fill="#25ff78" font-family="monospace" font-size="11" font-weight="700">HF</text></g><g transform="translate(53 333)"><rect x="-25" y="-25" width="50" height="50" rx="12" fill="#0c2117" stroke="#25ff78" stroke-opacity=".28"/><text text-anchor="middle" y="5" fill="#25ff78" font-family="monospace" font-size="11" font-weight="700">LC</text></g><line x1="28" y1="366" x2="322" y2="366" stroke="#25ff78" stroke-width="0.5" stroke-opacity=".2"/><text x="28" y="382" fill="#25ff78" font-size="10" letter-spacing="1.5" font-family="monospace" opacity=".8">CORE TOOLCHAIN</text><text x="28" y="404" fill="#edfff4" font-size="12">OpenCV</text><text x="175" y="404" fill="#edfff4" font-size="12">PyTorch</text><text x="28" y="426" fill="#edfff4" font-size="12">TensorFlow</text><text x="175" y="426" fill="#edfff4" font-size="12">Machine Learning</text><text x="28" y="448" fill="#edfff4" font-size="12">Deep Learning</text><text x="175" y="448" fill="#edfff4" font-size="12">LangChain</text><line x1="28" y1="570" x2="322" y2="570" stroke="#25ff78" stroke-width="0.5" stroke-opacity=".15"/><text x="28" y="590" fill="#75ad8c" font-size="10" letter-spacing="1" font-family="monospace">STATUS</text><text x="28" y="608" fill="#edfff4" font-size="13" font-weight="600" letter-spacing="0.5">MODELS TRAINED</text><circle cx="318" cy="603" r="5" fill="#25ff78" filter="url(#tinyGlow)"><animate attributeName="r" values="3;6;3" dur="1.7s" repeatCount="indefinite"/><animate attributeName="opacity" values=".5;1;.5" dur="1.7s" repeatCount="indefinite"/></circle><rect x="28" y="620" width="294" height="4" rx="2" fill="rgba(255,255,255,0.08)"/><rect x="28" y="620" width="0" height="4" rx="2" fill="#25ff78" filter="url(#glow)"><animate attributeName="width" from="0" to="279" dur="1.6s" begin="0.8s" fill="freeze" calcMode="spline" keySplines="0.25 0.1 0.25 1"/></rect></g><g transform="translate(1273 190)"><rect width="350" height="650" rx="22" fill="#25ff78" opacity=".035" filter="url(#softGlow)"/><rect x="4" y="4" width="342" height="642" rx="20" fill="url(#panel)" stroke="#4bff8a" stroke-opacity=".30"/><rect x="4" y="4" width="342" height="6" rx="3" fill="#9affba" opacity=".5"><animate attributeName="opacity" values=".25;.8;.25" dur="3.5s" begin="1.2000000000000002s" repeatCount="indefinite"/></rect><text x="28" y="46" fill="#65ff9b" font-size="12" letter-spacing="3">04 / INFRASTRUCTURE</text><text x="28" y="88" fill="#edfff4" font-size="31" font-weight="700">CLOUD</text><text x="28" y="115" fill="#75ad8c" font-size="12">Scale • Containers • Automation</text><g transform="translate(274 73)" fill="none" stroke="#9affba"><circle r="39" stroke-opacity=".14" stroke-dasharray="3 8"><animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="8s" repeatCount="indefinite"/></circle><circle r="25" stroke-opacity=".25"><animate attributeName="r" values="21;29;21" dur="2.4s" begin="0.8999999999999999s" repeatCount="indefinite"/></circle><path d="M-17 0H17M0-17V17" stroke-opacity=".28"/><circle r="4" fill="#8affb4" stroke="none"><animate attributeName="r" values="2;6;2" dur="1.5s" begin="0.6000000000000001s" repeatCount="indefinite"/></circle></g><g transform="translate(53 205)"><rect x="-25" y="-25" width="50" height="50" rx="12" fill="#0c2117" stroke="#9affba" stroke-opacity=".28"/><text text-anchor="middle" y="5" fill="#9affba" font-family="monospace" font-size="11" font-weight="700">AWS</text></g><g transform="translate(117 205)"><rect x="-25" y="-25" width="50" height="50" rx="12" fill="#0c2117" stroke="#9affba" stroke-opacity=".28"/><text text-anchor="middle" y="5" fill="#9affba" font-family="monospace" font-size="11" font-weight="700">AZ</text></g><g transform="translate(181 205)"><rect x="-25" y="-25" width="50" height="50" rx="12" fill="#0c2117" stroke="#9affba" stroke-opacity=".28"/><text text-anchor="middle" y="5" fill="#9affba" font-family="monospace" font-size="11" font-weight="700">GCP</text></g><g transform="translate(53 269)"><rect x="-25" y="-25" width="50" height="50" rx="12" fill="#0c2117" stroke="#9affba" stroke-opacity=".28"/><text text-anchor="middle" y="5" fill="#9affba" font-family="monospace" font-size="11" font-weight="700">DK</text></g><g transform="translate(117 269)"><rect x="-25" y="-25" width="50" height="50" rx="12" fill="#0c2117" stroke="#9affba" stroke-opacity=".28"/><text text-anchor="middle" y="5" fill="#9affba" font-family="monospace" font-size="11" font-weight="700">K8S</text></g><g transform="translate(181 269)"><rect x="-25" y="-25" width="50" height="50" rx="12" fill="#0c2117" stroke="#9affba" stroke-opacity=".28"/><text text-anchor="middle" y="5" fill="#9affba" font-family="monospace" font-size="11" font-weight="700">NGX</text></g><line x1="28" y1="366" x2="322" y2="366" stroke="#9affba" stroke-width="0.5" stroke-opacity=".2"/><text x="28" y="382" fill="#9affba" font-size="10" letter-spacing="1.5" font-family="monospace" opacity=".8">CORE TOOLCHAIN</text><text x="28" y="404" fill="#edfff4" font-size="12">Docker</text><text x="175" y="404" fill="#edfff4" font-size="12">Kubernetes</text><text x="28" y="426" fill="#edfff4" font-size="12">Nginx</text><text x="175" y="426" fill="#edfff4" font-size="12">AWS</text><text x="28" y="448" fill="#edfff4" font-size="12">Azure</text><text x="175" y="448" fill="#edfff4" font-size="12">GCP</text><text x="28" y="470" fill="#edfff4" font-size="12">CI/CD</text><line x1="28" y1="570" x2="322" y2="570" stroke="#9affba" stroke-width="0.5" stroke-opacity=".15"/><text x="28" y="590" fill="#75ad8c" font-size="10" letter-spacing="1" font-family="monospace">STATUS</text><text x="28" y="608" fill="#edfff4" font-size="13" font-weight="600" letter-spacing="0.5">CLUSTERS OPERATIONAL</text><circle cx="318" cy="603" r="5" fill="#9affba" filter="url(#tinyGlow)"><animate attributeName="r" values="3;6;3" dur="1.7s" repeatCount="indefinite"/><animate attributeName="opacity" values=".5;1;.5" dur="1.7s" repeatCount="indefinite"/></circle><rect x="28" y="620" width="294" height="4" rx="2" fill="rgba(255,255,255,0.08)"/><rect x="28" y="620" width="0" height="4" rx="2" fill="#9affba" filter="url(#glow)"><animate attributeName="width" from="0" to="258" dur="1.6s" begin="1.0s" fill="freeze" calcMode="spline" keySplines="0.25 0.1 0.25 1"/></rect></g></g><g font-family="monospace" font-size="11" fill="#6cff9d" letter-spacing="3" opacity=".7" text-anchor="middle">
+  <circle cx="592" cy="914" r="2" fill="#6cff9d"/>
+  <text x="832" y="918">PARSA @ KRAKEN // 4 DOMAINS // ENGINEERING STACK ONLINE</text>
+  <circle cx="1072" cy="914" r="2" fill="#6cff9d"/>
+</g>
+</svg>
