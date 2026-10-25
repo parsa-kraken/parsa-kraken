@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1180" height="660" viewBox="0 0 1180 660" font-family="'Inter','Segoe UI',Roboto,Helvetica,Arial,sans-serif">
+<defs>
+  <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+    <stop offset="0%" stop-color="#0b1220"/>
+    <stop offset="50%" stop-color="#0a1322"/>
+    <stop offset="100%" stop-color="#0d1a30"/>
+  </linearGradient>
+  <radialGradient id="bgGlow" cx="50%" cy="0%" r="80%">
+    <stop offset="0%" stop-color="#059669" stop-opacity="0.18"/>
+    <stop offset="60%" stop-color="#059669" stop-opacity="0.04"/>
+    <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+  </radialGradient>
+  <linearGradient id="barFill" x1="0%" y1="0%" x2="100%" y2="0%">
+    <stop offset="0%" stop-color="#059669"/>
+    <stop offset="50%" stop-color="#22c55e"/>
+    <stop offset="100%" stop-color="#4ade80"/>
+  </linearGradient>
+  <linearGradient id="barFillRed" x1="0%" y1="0%" x2="100%" y2="0%">
+    <stop offset="0%" stop-color="#ef4444"/>
+    <stop offset="100%" stop-color="#f87171"/>
+  </linearGradient>
+  <linearGradient id="borderGlow" x1="0%" y1="0%" x2="100%" y2="0%">
+    <stop offset="0%" stop-color="#16a34a" stop-opacity="0.9"/>
+    <stop offset="50%" stop-color="#4ade80" stop-opacity="0.4"/>
+    <stop offset="100%" stop-color="#16a34a" stop-opacity="0.9"/>
+  </linearGradient>
+  <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+    <path d="M 32 0 L 0 0 0 32" fill="none" stroke="#22c55e" stroke-width="0.4" stroke-opacity="0.06"/>
+  </pattern>
+  <pattern id="scanlines" width="4" height="4" patternUnits="userSpaceOnUse">
+    <rect width="4" height="1" fill="#22c55e" opacity="0.025"/>
+  </pattern>
+  <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+    <feGaussianBlur stdDeviation="3" result="b"/>
+    <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+  <filter id="softGlow" x="-50%" y="-50%" width="200%" height="200%">
+    <feGaussianBlur stdDeviation="6" result="b"/>
+    <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+  <style>
+    text { font-family: 'Inter','Segoe UI',Roboto,Helvetica,Arial,sans-serif; }
+    .mono { font-family: 'JetBrains Mono','Courier New',Consolas,monospace; }
+    .h1 { font-size: 26px; font-weight: 700; fill: #4ade80; letter-spacing: 2px; }
+    .h2 { font-size: 18px; font-weight: 600; fill: #e2e8f0; letter-spacing: 1px; }
+    .h3 { font-size: 14px; font-weight: 600; fill: #4ade80; letter-spacing: 0.5px; }
+    .lbl { font-size: 11px; fill: #64748b; letter-spacing: 1.5px; text-transform: uppercase; }
+    .val { font-size: 14px; fill: #e2e8f0; }
+    .key { font-size: 13px; fill: #4ade80; font-weight: 600; }
+    .pct { font-size: 11px; fill: #94a3b8; font-family: 'JetBrains Mono','Courier New',Consolas,monospace; }
+    .meta { font-size: 11px; fill: #64748b; font-family: 'JetBrains Mono','Courier New',Consolas,monospace; }
+    .arrow { fill: none; stroke: #22c55e; stroke-width: 1.5; }
+  </style>
+</defs>
+<rect width="1180" height="660" fill="url(#bgGrad)"/>
+<rect width="1180" height="660" fill="url(#grid)"/>
+<rect width="1180" height="660" fill="url(#scanlines)"/>
+<rect width="1180" height="660" fill="url(#bgGlow)"/>
+
+<!-- Header bar -->
+<g>
+  <rect x="20" y="20" width="1140" height="56" rx="8" fill="#0f172a" stroke="#16a34a" stroke-width="1" stroke-opacity="0.5"/>
+  <circle cx="42" cy="48" r="6" fill="#ef4444"/>
+  <circle cx="62" cy="48" r="6" fill="#fbbf24"/>
+  <circle cx="82" cy="48" r="6" fill="#4ade80">
+    <animate attributeName="opacity" values="1;0.5;1" dur="2.4s" repeatCount="indefinite"/>
+  </circle>
+  <text x="105" y="46" class="mono" font-size="11" fill="#64748b" letter-spacing="2">CONTACT NETWORK</text>
+  <text x="105" y="62" class="h1" font-size="22">// CONTACT NETWORK</text>
+  <text x="1148" y="55" text-anchor="end" class="meta">parsa@kraken ~ % ./section.sh --live</text>
+</g>
+
+<!-- Frame -->
+<rect x="3" y="3" width="1174" height="654" rx="14" fill="none" stroke="#16a34a" stroke-width="1.5" stroke-opacity="0.55">
+  <animate attributeName="stroke-opacity" values="0.4;0.75;0.4" dur="3.4s" repeatCount="indefinite"/>
+</rect>
+<text x="32" y="108" class="mono" font-size="11" fill="#64748b" letter-spacing="2">// 6 ENDPOINTS  //  OPEN FOR COLLABORATION  //  RESPONSE_TIME: &lt;24h</text><g transform="translate(34,140)"><rect x="0" y="0" width="360" height="200" rx="10" fill="#111c33" stroke="#4ade80" stroke-width="1" stroke-opacity="0.55" filter="url(#glow)"/><path d="M 0 0 L 60 0 L 0 60 Z" fill="#4ade80" opacity="0.12"/><text x="20" y="30" class="meta" fill="#4ade80" letter-spacing="2">// EMAIL</text><circle cx="338" cy="22" r="4" fill="#4ade80"><animate attributeName="opacity" values="1;0.4;1" dur="1.6s" begin="0.0s" repeatCount="indefinite"/></circle><g transform="translate(168,50)"><rect x="2" y="6" width="20" height="13" rx="2" fill="none" stroke="#4ade80" stroke-width="1.4"/><path d="M 2 8 L 12 14 L 22 8" fill="none" stroke="#4ade80" stroke-width="1.4"/></g><text x="180" y="150" text-anchor="middle" class="h2" font-size="16" fill="#e2e8f0">mrparsataheri1@gmail.com</text><line x1="20" y1="170" x2="340" y2="170" stroke="#4ade80" stroke-width="0.4" stroke-opacity="0.3"/><text x="180" y="188" text-anchor="middle" class="meta" fill="#64748b">// PGP available on request</text></g><g transform="translate(410,140)"><rect x="0" y="0" width="360" height="200" rx="10" fill="#111c33" stroke="#4ade80" stroke-width="1" stroke-opacity="0.55" filter="url(#glow)"/><path d="M 0 0 L 60 0 L 0 60 Z" fill="#4ade80" opacity="0.12"/><text x="20" y="30" class="meta" fill="#4ade80" letter-spacing="2">// TELEGRAM</text><circle cx="338" cy="22" r="4" fill="#4ade80"><animate attributeName="opacity" values="1;0.4;1" dur="1.6s" begin="0.2s" repeatCount="indefinite"/></circle><g transform="translate(168,50)"><path d="M 3 12 L 22 3 L 13 22 L 11 14 Z" fill="none" stroke="#4ade80" stroke-width="1.4" stroke-linejoin="round"/><line x1="11" y1="14" x2="22" y2="3" stroke="#4ade80" stroke-width="1.4"/></g><text x="180" y="150" text-anchor="middle" class="h2" font-size="16" fill="#e2e8f0">@p2002t</text><line x1="20" y1="170" x2="340" y2="170" stroke="#4ade80" stroke-width="0.4" stroke-opacity="0.3"/><text x="180" y="188" text-anchor="middle" class="meta" fill="#64748b">// fastest response channel</text></g><g transform="translate(786,140)"><rect x="0" y="0" width="360" height="200" rx="10" fill="#111c33" stroke="#4ade80" stroke-width="1" stroke-opacity="0.55" filter="url(#glow)"/><path d="M 0 0 L 60 0 L 0 60 Z" fill="#4ade80" opacity="0.12"/><text x="20" y="30" class="meta" fill="#4ade80" letter-spacing="2">// LINKEDIN</text><circle cx="338" cy="22" r="4" fill="#4ade80"><animate attributeName="opacity" values="1;0.4;1" dur="1.6s" begin="0.4s" repeatCount="indefinite"/></circle><g transform="translate(168,50)"><rect x="2" y="2" width="20" height="20" rx="3" fill="none" stroke="#4ade80" stroke-width="1.4"/><line x1="7" y1="7" x2="7" y2="17" stroke="#4ade80" stroke-width="1.6"/><circle cx="7" cy="5" r="1.2" fill="#4ade80"/><path d="M 11 17 L 11 9 M 11 13 C 12 10 16 9 17 13 L 17 17" fill="none" stroke="#4ade80" stroke-width="1.6" stroke-linejoin="round"/></g><text x="180" y="150" text-anchor="middle" class="h2" font-size="16" fill="#e2e8f0">parsa-taheri-781b90355</text><line x1="20" y1="170" x2="340" y2="170" stroke="#4ade80" stroke-width="0.4" stroke-opacity="0.3"/><text x="180" y="188" text-anchor="middle" class="meta" fill="#64748b">// professional network</text></g><g transform="translate(34,356)"><rect x="0" y="0" width="360" height="200" rx="10" fill="#111c33" stroke="#4ade80" stroke-width="1" stroke-opacity="0.55" filter="url(#glow)"/><path d="M 0 0 L 60 0 L 0 60 Z" fill="#4ade80" opacity="0.12"/><text x="20" y="30" class="meta" fill="#4ade80" letter-spacing="2">// GITHUB</text><circle cx="338" cy="22" r="4" fill="#4ade80"><animate attributeName="opacity" values="1;0.4;1" dur="1.6s" begin="0.6000000000000001s" repeatCount="indefinite"/></circle><g transform="translate(168,50)"><path d="M 12 2 C 6.5 2 2 6.5 2 12 C 2 16.5 5 20.4 9 21.8 C 9.5 21.9 9.7 21.5 9.7 21.2 L 9.7 19.5 C 7 20.1 6.4 18.3 6.4 18.3 C 6 17.2 5.4 16.9 5.4 16.9 C 4.6 16.4 5.5 16.4 5.5 16.4 C 6.5 16.5 7 17.4 7 17.4 C 7.8 18.9 9.2 18.5 9.7 18.2 C 9.8 17.6 10 17.2 10.3 17 C 8.1 16.7 5.8 15.8 5.8 11.9 C 5.8 10.8 6.2 9.9 6.9 9.2 C 6.8 9 6.4 7.9 7 6.4 C 7 6.4 7.9 6.1 9.7 7.4 C 10.5 7.2 11.3 7.1 12 7.1 C 12.7 7.1 13.5 7.2 14.3 7.4 C 16.1 6.1 17 6.4 17 6.4 C 17.6 7.9 17.2 9 17.1 9.2 C 17.8 9.9 18.2 10.8 18.2 11.9 C 18.2 15.8 15.9 16.7 13.7 17 C 14 17.3 14.3 17.8 14.3 18.6 L 14.3 21.2 C 14.3 21.5 14.5 21.9 15 21.8 C 19 20.4 22 16.5 22 12 C 22 6.5 17.5 2 12 2 Z" fill="#4ade80" fill-opacity="0.9"/></g><text x="180" y="150" text-anchor="middle" class="h2" font-size="16" fill="#e2e8f0">parsa-kraken</text><line x1="20" y1="170" x2="340" y2="170" stroke="#4ade80" stroke-width="0.4" stroke-opacity="0.3"/><text x="180" y="188" text-anchor="middle" class="meta" fill="#64748b">// primary code hub</text></g><g transform="translate(410,356)"><rect x="0" y="0" width="360" height="200" rx="10" fill="#111c33" stroke="#fbbf24" stroke-width="1" stroke-opacity="0.55" filter="url(#glow)"/><path d="M 0 0 L 60 0 L 0 60 Z" fill="#fbbf24" opacity="0.12"/><text x="20" y="30" class="meta" fill="#fbbf24" letter-spacing="2">// LOCATION</text><circle cx="338" cy="22" r="4" fill="#fbbf24"><animate attributeName="opacity" values="1;0.4;1" dur="1.6s" begin="0.8s" repeatCount="indefinite"/></circle><g transform="translate(168,50)"><path d="M 12 2 C 7.5 2 4 5.5 4 10 C 4 16 12 22 12 22 C 12 22 20 16 20 10 C 20 5.5 16.5 2 12 2 Z" fill="none" stroke="#fbbf24" stroke-width="1.4"/><circle cx="12" cy="10" r="3" fill="none" stroke="#fbbf24" stroke-width="1.4"/></g><text x="180" y="150" text-anchor="middle" class="h2" font-size="16" fill="#e2e8f0">Tehran, Iran</text><line x1="20" y1="170" x2="340" y2="170" stroke="#fbbf24" stroke-width="0.4" stroke-opacity="0.3"/><text x="180" y="188" text-anchor="middle" class="meta" fill="#64748b">// UTC+3:30 · IRST</text></g><g transform="translate(786,356)"><rect x="0" y="0" width="360" height="200" rx="10" fill="#111c33" stroke="#f87171" stroke-width="1" stroke-opacity="0.55" filter="url(#glow)"/><path d="M 0 0 L 60 0 L 0 60 Z" fill="#f87171" opacity="0.12"/><text x="20" y="30" class="meta" fill="#f87171" letter-spacing="2">// STATUS</text><circle cx="338" cy="22" r="4" fill="#f87171"><animate attributeName="opacity" values="1;0.4;1" dur="1.6s" begin="1.0s" repeatCount="indefinite"/></circle><g transform="translate(168,50)"><circle cx="12" cy="12" r="6" fill="none" stroke="#f87171" stroke-width="1.4"/><circle cx="12" cy="12" r="3" fill="#f87171"><animate attributeName="opacity" values="1;0.3;1" dur="1.5s" repeatCount="indefinite"/></circle></g><text x="180" y="150" text-anchor="middle" class="h2" font-size="16" fill="#e2e8f0">Open to collaborations</text><line x1="20" y1="170" x2="340" y2="170" stroke="#f87171" stroke-width="0.4" stroke-opacity="0.3"/><text x="180" y="188" text-anchor="middle" class="meta" fill="#64748b">// actively building</text></g><text x="590" y="638" text-anchor="middle" class="meta" fill="#64748b">// reach out · let us engineer something worth shipping together //</text></svg>
