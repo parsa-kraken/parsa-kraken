@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1664" height="936" viewBox="0 0 1664 936" preserveAspectRatio="xMidYMid meet">
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#16161F"/>
+    <stop offset=".5" stop-color="#111119"/>
+    <stop offset="1" stop-color="#0C0C14"/>
+  </linearGradient>
+  <linearGradient id="panel" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#1C1C29" stop-opacity=".92"/>
+    <stop offset="1" stop-color="#13131C" stop-opacity=".96"/>
+  </linearGradient>
+  <linearGradient id="panelV" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#221833" stop-opacity=".94"/>
+    <stop offset="1" stop-color="#13131C" stop-opacity=".97"/>
+  </linearGradient>
+  <linearGradient id="panelB" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#12202B" stop-opacity=".94"/>
+    <stop offset="1" stop-color="#13131C" stop-opacity=".97"/>
+  </linearGradient>
+  <linearGradient id="panelP" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#251331" stop-opacity=".94"/>
+    <stop offset="1" stop-color="#13131C" stop-opacity=".97"/>
+  </linearGradient>
+  <linearGradient id="panelY" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#262313" stop-opacity=".94"/>
+    <stop offset="1" stop-color="#13131C" stop-opacity=".97"/>
+  </linearGradient>
+
+  <radialGradient id="glowV" cx="50%" cy="50%" r="50%">
+    <stop offset="0" stop-color="#8B35FF" stop-opacity=".16"/>
+    <stop offset="1" stop-color="#8B35FF" stop-opacity="0"/>
+  </radialGradient>
+  <radialGradient id="glowB" cx="50%" cy="50%" r="50%">
+    <stop offset="0" stop-color="#00D9FF" stop-opacity=".13"/>
+    <stop offset="1" stop-color="#00D9FF" stop-opacity="0"/>
+  </radialGradient>
+  <radialGradient id="glowP" cx="50%" cy="50%" r="50%">
+    <stop offset="0" stop-color="#D500F9" stop-opacity=".15"/>
+    <stop offset="1" stop-color="#D500F9" stop-opacity="0"/>
+  </radialGradient>
+
+  <pattern id="grid" width="44" height="44" patternUnits="userSpaceOnUse">
+    <path d="M44 0H0V44" fill="none" stroke="#7A6AFF" stroke-opacity=".05"/>
+    <circle cx="0" cy="0" r="1" fill="#00D9FF" opacity=".14"/>
+  </pattern>
+
+  <filter id="glow" x="-100%" y="-100%" width="300%" height="300%">
+    <feGaussianBlur stdDeviation="4" result="b"/>
+    <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+  <filter id="tinyGlow" x="-100%" y="-100%" width="300%" height="300%">
+    <feGaussianBlur stdDeviation="1.8"/>
+  </filter>
+  <filter id="softGlow" x="-100%" y="-100%" width="300%" height="300%">
+    <feGaussianBlur stdDeviation="18"/>
+  </filter>
+</defs>
+<rect width="1664" height="936" fill="url(#bg)"/>
+<rect width="1664" height="936" fill="url(#grid)">
+  <animateTransform attributeName="transform" type="translate"
+    values="0 0;44 44;0 0" dur="22s" repeatCount="indefinite"/>
+</rect>
+<ellipse cx="499" cy="210" rx="520" ry="280" fill="url(#glowP)" filter="url(#softGlow)">
+  <animate attributeName="opacity" values=".65;1;.65" dur="9s" repeatCount="indefinite"/>
+</ellipse>
+<ellipse cx="1198" cy="760" rx="480" ry="260" fill="url(#glowV)" filter="url(#softGlow)">
+  <animate attributeName="opacity" values=".5;.85;.5" dur="11s" repeatCount="indefinite"/>
+</ellipse>
+<g fill="#00D9FF" filter="url(#tinyGlow)">
+  <circle cx="240" cy="150" r="1.6" opacity=".5"><animate attributeName="cy" values="150;132;150" dur="6s" repeatCount="indefinite"/></circle>
+  <circle cx="1420" cy="180" r="1.4" opacity=".4"><animate attributeName="cy" values="180;196;180" dur="7s" repeatCount="indefinite"/></circle>
+  <circle cx="480" cy="820" r="1.5" opacity=".35"><animate attributeName="cy" values="820;806;820" dur="8s" repeatCount="indefinite"/></circle>
+  <circle cx="1180" cy="840" r="1.3" opacity=".4"><animate attributeName="cy" values="840;856;840" dur="6.5s" repeatCount="indefinite"/></circle>
+</g>
+<g font-family="Arial, Helvetica, sans-serif" text-anchor="middle">
+  <text x="832" y="70" fill="#D500F9" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="12" letter-spacing="5" opacity=".9">
+    03 // TIMELINE
+    <animate attributeName="opacity" values=".6;1;.6" dur="4s" repeatCount="indefinite"/>
+  </text>
+  <text x="832" y="116" fill="#F2F2FA" font-size="44" font-weight="800" letter-spacing="1">CAREER TRAJECTORY</text>
+  <text x="832" y="150" fill="#63637F" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="12" letter-spacing="3">TIMELINE / 4 ROLES / 6+ YEARS / ACTIVE: 2</text>
+  <rect x="662" y="172" width="340" height="1.5" fill="#D500F9" opacity=".55">
+    <animate attributeName="width" values="240;420;240" dur="5s" repeatCount="indefinite"/>
+    <animate attributeName="x" values="712;622;712" dur="5s" repeatCount="indefinite"/>
+  </rect>
+</g>
+<line x1="80" y1="530" x2="1584" y2="530" stroke="#D500F9" stroke-opacity=".28" stroke-width="2"/><line x1="80" y1="530" x2="1584" y2="530" stroke="#D500F9" stroke-width="1.6" stroke-dasharray="6 18" filter="url(#tinyGlow)"><animate attributeName="stroke-dashoffset" values="0;-192" dur="6s" repeatCount="indefinite"/></line><line x1="80" y1="521" x2="80" y2="539" stroke="#D500F9" stroke-width="1.5" stroke-opacity=".75"/><text x="80" y="560" text-anchor="middle" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="13" font-weight="700" fill="#A9A9C4">2019</text><line x1="456" y1="521" x2="456" y2="539" stroke="#D500F9" stroke-width="1.5" stroke-opacity=".75"/><text x="456" y="560" text-anchor="middle" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="13" font-weight="700" fill="#A9A9C4">2020</text><line x1="832" y1="521" x2="832" y2="539" stroke="#D500F9" stroke-width="1.5" stroke-opacity=".75"/><text x="832" y="560" text-anchor="middle" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="13" font-weight="700" fill="#A9A9C4">2022</text><line x1="1208" y1="521" x2="1208" y2="539" stroke="#D500F9" stroke-width="1.5" stroke-opacity=".75"/><text x="1208" y="560" text-anchor="middle" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="13" font-weight="700" fill="#A9A9C4">2025</text><line x1="1584" y1="521" x2="1584" y2="539" stroke="#D500F9" stroke-width="1.5" stroke-opacity=".75"/><text x="1584" y="560" text-anchor="middle" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="13" font-weight="700" fill="#FFE500">now</text><line x1="320" y1="478" x2="320" y2="530" stroke="#00D9FF" stroke-width="1.2" stroke-opacity=".55" stroke-dasharray="3 5"/><g transform="translate(140 198)"><rect width="360" height="280" rx="14" fill="url(#panelB)" stroke="#00D9FF" stroke-opacity=".32"/><path d="M0 11 V0 H11 M347 0 H358 V11 M358 267 V278 H347 M11 278 H0 V267" fill="none" stroke="#00D9FF" stroke-width="1.5" stroke-opacity="0.5"/><rect x="20" y="18" width="138" height="26" rx="7" fill="#111119" fill-opacity=".6" stroke="#00D9FF" stroke-opacity=".5"/><text x="89" y="35" text-anchor="middle" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="12" font-weight="700" fill="#00D9FF">2019 - 2020</text><rect x="264" y="18" width="76" height="26" rx="7" fill="#111119" fill-opacity=".6" stroke="#00D9FF" stroke-opacity=".5"/><text x="302" y="35" text-anchor="middle" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="11" font-weight="700" fill="#00D9FF">GAME_DEV</text><text x="20" y="78" fill="#F2F2FA" font-size="21" font-weight="800">Game Developer</text><text x="20" y="102" fill="#A9A9C4" font-size="13">Golad Game &amp; Animation Studio</text><text x="20" y="121" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="11" fill="#63637F">[ Kermanshah ]</text><line x1="20" y1="136" x2="340" y2="136" stroke="#26263A" stroke-width="1"/><circle cx="29" cy="158" r="2.5" fill="#00D9FF"/><text x="42" y="162" fill="#A9A9C4" font-size="12.5">C# / C++ gameplay programming</text><circle cx="29" cy="182" r="2.5" fill="#00D9FF"/><text x="42" y="186" fill="#A9A9C4" font-size="12.5">Unreal Engine &amp; Unity 3D engines</text><circle cx="29" cy="206" r="2.5" fill="#00D9FF"/><text x="42" y="210" fill="#A9A9C4" font-size="12.5">3D Max modeling &amp; character design</text><line x1="20" y1="260" x2="340" y2="260" stroke="#26263A" stroke-width="0.8"/><circle cx="332" cy="270" r="4" fill="#00D9FF" filter="url(#tinyGlow)"><animate attributeName="r" values="2;6;2" dur="2.2s" begin="0.0s" repeatCount="indefinite"/><animate attributeName="opacity" values=".45;1;.45" dur="2.2s" begin="0.0s" repeatCount="indefinite"/></circle></g><circle cx="320" cy="530" r="9" fill="#111119" stroke="#00D9FF" stroke-width="2"/><circle cx="320" cy="530" r="3" fill="#00D9FF" filter="url(#tinyGlow)"/><line x1="570" y1="582" x2="570" y2="530" stroke="#8B35FF" stroke-width="1.2" stroke-opacity=".55" stroke-dasharray="3 5"/><g transform="translate(390 582)"><rect width="360" height="280" rx="14" fill="url(#panelV)" stroke="#8B35FF" stroke-opacity=".32"/><path d="M0 11 V0 H11 M347 0 H358 V11 M358 267 V278 H347 M11 278 H0 V267" fill="none" stroke="#8B35FF" stroke-width="1.5" stroke-opacity="0.5"/><rect x="20" y="18" width="138" height="26" rx="7" fill="#111119" fill-opacity=".6" stroke="#8B35FF" stroke-opacity=".5"/><text x="89" y="35" text-anchor="middle" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="12" font-weight="700" fill="#8B35FF">2020 - 2022</text><rect x="264" y="18" width="76" height="26" rx="7" fill="#111119" fill-opacity=".6" stroke="#8B35FF" stroke-opacity=".5"/><text x="302" y="35" text-anchor="middle" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="11" font-weight="700" fill="#8B35FF">WEB_SEO</text><text x="20" y="78" fill="#F2F2FA" font-size="21" font-weight="800">Web Designer &amp; SEO Engineer</text><text x="20" y="102" fill="#A9A9C4" font-size="13">Koosha Rayan Co.</text><text x="20" y="121" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="11" fill="#63637F">[ Ilam ]</text><line x1="20" y1="136" x2="340" y2="136" stroke="#26263A" stroke-width="1"/><circle cx="29" cy="158" r="2.5" fill="#8B35FF"/><text x="42" y="162" fill="#A9A9C4" font-size="12.5">HTML5 / CSS3 / JS / Vue.js 3</text><circle cx="29" cy="182" r="2.5" fill="#8B35FF"/><text x="42" y="186" fill="#A9A9C4" font-size="12.5">WordPress + WooCommerce customization</text><circle cx="29" cy="206" r="2.5" fill="#8B35FF"/><text x="42" y="210" fill="#A9A9C4" font-size="12.5">UI optimization &amp; technical SEO</text><line x1="20" y1="260" x2="340" y2="260" stroke="#26263A" stroke-width="0.8"/><circle cx="332" cy="270" r="4" fill="#8B35FF" filter="url(#tinyGlow)"><animate attributeName="r" values="2;6;2" dur="2.2s" begin="0.3s" repeatCount="indefinite"/><animate attributeName="opacity" values=".45;1;.45" dur="2.2s" begin="0.3s" repeatCount="indefinite"/></circle></g><circle cx="570" cy="530" r="9" fill="#111119" stroke="#8B35FF" stroke-width="2"/><circle cx="570" cy="530" r="3" fill="#8B35FF" filter="url(#tinyGlow)"/><line x1="960" y1="478" x2="960" y2="530" stroke="#D500F9" stroke-width="1.2" stroke-opacity=".55" stroke-dasharray="3 5"/><g transform="translate(780 198)"><rect width="360" height="280" rx="14" fill="url(#panelP)" stroke="#D500F9" stroke-opacity=".32"/><path d="M0 11 V0 H11 M347 0 H358 V11 M358 267 V278 H347 M11 278 H0 V267" fill="none" stroke="#D500F9" stroke-width="1.5" stroke-opacity="0.5"/><rect x="20" y="18" width="138" height="26" rx="7" fill="#111119" fill-opacity=".6" stroke="#D500F9" stroke-opacity=".5"/><text x="89" y="35" text-anchor="middle" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="12" font-weight="700" fill="#D500F9">2022 - now</text><rect x="264" y="18" width="76" height="26" rx="7" fill="#111119" fill-opacity=".6" stroke="#D500F9" stroke-opacity=".5"/><text x="302" y="35" text-anchor="middle" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="11" font-weight="700" fill="#D500F9">TEACHING</text><text x="20" y="78" fill="#F2F2FA" font-size="21" font-weight="800">Programming Instructor</text><text x="20" y="102" fill="#A9A9C4" font-size="13">Computer Technical-Vocational School</text><text x="20" y="121" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="11" fill="#63637F">[ Kermanshah ]</text><line x1="20" y1="136" x2="340" y2="136" stroke="#26263A" stroke-width="1"/><circle cx="29" cy="158" r="2.5" fill="#D500F9"/><text x="42" y="162" fill="#A9A9C4" font-size="12.5">Frontend / Backend / Database</text><circle cx="29" cy="182" r="2.5" fill="#D500F9"/><text x="42" y="186" fill="#A9A9C4" font-size="12.5">Python / Node.js / MySQL / Linux</text><circle cx="29" cy="206" r="2.5" fill="#D500F9"/><text x="42" y="210" fill="#A9A9C4" font-size="12.5">Algorithms, data structures, OOP</text><line x1="20" y1="260" x2="340" y2="260" stroke="#26263A" stroke-width="0.8"/><circle cx="332" cy="270" r="4" fill="#D500F9" filter="url(#tinyGlow)"><animate attributeName="r" values="2;6;2" dur="2.2s" begin="0.6s" repeatCount="indefinite"/><animate attributeName="opacity" values=".45;1;.45" dur="2.2s" begin="0.6s" repeatCount="indefinite"/></circle></g><circle cx="960" cy="530" r="9" fill="#111119" stroke="#D500F9" stroke-width="2"/><circle cx="960" cy="530" r="3" fill="#D500F9" filter="url(#tinyGlow)"/><line x1="1310" y1="582" x2="1310" y2="530" stroke="#FFE500" stroke-width="1.2" stroke-opacity=".55" stroke-dasharray="3 5"/><g transform="translate(1130 582)"><rect width="360" height="280" rx="14" fill="url(#panelY)" stroke="#FFE500" stroke-opacity=".32"/><path d="M0 11 V0 H11 M347 0 H358 V11 M358 267 V278 H347 M11 278 H0 V267" fill="none" stroke="#FFE500" stroke-width="1.5" stroke-opacity="0.5"/><rect x="20" y="18" width="138" height="26" rx="7" fill="#111119" fill-opacity=".6" stroke="#FFE500" stroke-opacity=".5"/><text x="89" y="35" text-anchor="middle" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="12" font-weight="700" fill="#FFE500">2025 - now</text><rect x="264" y="18" width="76" height="26" rx="7" fill="#111119" fill-opacity=".6" stroke="#FFE500" stroke-opacity=".5"/><text x="302" y="35" text-anchor="middle" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="11" font-weight="700" fill="#FFE500">TECH_LEAD</text><text x="20" y="78" fill="#F2F2FA" font-size="21" font-weight="800">Technical Manager</text><text x="20" y="102" fill="#A9A9C4" font-size="13">sup</text><text x="20" y="121" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="11" fill="#63637F">[ Kermanshah ]</text><line x1="20" y1="136" x2="340" y2="136" stroke="#26263A" stroke-width="1"/><circle cx="29" cy="158" r="2.5" fill="#FFE500"/><text x="42" y="162" fill="#A9A9C4" font-size="12.5">Team leadership &amp; technical planning</text><circle cx="29" cy="182" r="2.5" fill="#FFE500"/><text x="42" y="186" fill="#A9A9C4" font-size="12.5">Software architecture &amp; code reviews</text><circle cx="29" cy="206" r="2.5" fill="#FFE500"/><text x="42" y="210" fill="#A9A9C4" font-size="12.5">Product lifecycle &amp; mentorship</text><line x1="20" y1="260" x2="340" y2="260" stroke="#26263A" stroke-width="0.8"/><circle cx="332" cy="270" r="4" fill="#FFE500" filter="url(#tinyGlow)"><animate attributeName="r" values="2;6;2" dur="2.2s" begin="0.8999999999999999s" repeatCount="indefinite"/><animate attributeName="opacity" values=".45;1;.45" dur="2.2s" begin="0.8999999999999999s" repeatCount="indefinite"/></circle></g><circle cx="1310" cy="530" r="9" fill="#111119" stroke="#FFE500" stroke-width="2"/><circle cx="1310" cy="530" r="3" fill="#FFE500" filter="url(#tinyGlow)"/><g font-family="ui-monospace, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="11" fill="#63637F" letter-spacing="3" opacity=".85" text-anchor="middle">
+  <circle cx="538" cy="912" r="2" fill="#D500F9"/>
+  <text x="832" y="916">4 ROLES // 6+ YEARS // BUILDING - TEACHING - LEADING</text>
+  <circle cx="1126" cy="912" r="2" fill="#D500F9"/>
+</g>
+</svg>

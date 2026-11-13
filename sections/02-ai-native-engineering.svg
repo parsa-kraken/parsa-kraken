@@ -1,0 +1,241 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1664" height="936" viewBox="0 0 1664 936" preserveAspectRatio="xMidYMid meet">
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#16161F"/>
+    <stop offset=".5" stop-color="#111119"/>
+    <stop offset="1" stop-color="#0C0C14"/>
+  </linearGradient>
+  <linearGradient id="panel" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#1C1C29" stop-opacity=".92"/>
+    <stop offset="1" stop-color="#13131C" stop-opacity=".96"/>
+  </linearGradient>
+  <linearGradient id="panelV" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#221833" stop-opacity=".94"/>
+    <stop offset="1" stop-color="#13131C" stop-opacity=".97"/>
+  </linearGradient>
+  <linearGradient id="panelB" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#12202B" stop-opacity=".94"/>
+    <stop offset="1" stop-color="#13131C" stop-opacity=".97"/>
+  </linearGradient>
+  <linearGradient id="panelP" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#251331" stop-opacity=".94"/>
+    <stop offset="1" stop-color="#13131C" stop-opacity=".97"/>
+  </linearGradient>
+  <linearGradient id="panelY" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#262313" stop-opacity=".94"/>
+    <stop offset="1" stop-color="#13131C" stop-opacity=".97"/>
+  </linearGradient>
+
+  <radialGradient id="glowV" cx="50%" cy="50%" r="50%">
+    <stop offset="0" stop-color="#8B35FF" stop-opacity=".16"/>
+    <stop offset="1" stop-color="#8B35FF" stop-opacity="0"/>
+  </radialGradient>
+  <radialGradient id="glowB" cx="50%" cy="50%" r="50%">
+    <stop offset="0" stop-color="#00D9FF" stop-opacity=".13"/>
+    <stop offset="1" stop-color="#00D9FF" stop-opacity="0"/>
+  </radialGradient>
+  <radialGradient id="glowP" cx="50%" cy="50%" r="50%">
+    <stop offset="0" stop-color="#D500F9" stop-opacity=".15"/>
+    <stop offset="1" stop-color="#D500F9" stop-opacity="0"/>
+  </radialGradient>
+
+  <pattern id="grid" width="44" height="44" patternUnits="userSpaceOnUse">
+    <path d="M44 0H0V44" fill="none" stroke="#7A6AFF" stroke-opacity=".05"/>
+    <circle cx="0" cy="0" r="1" fill="#00D9FF" opacity=".14"/>
+  </pattern>
+
+  <filter id="glow" x="-100%" y="-100%" width="300%" height="300%">
+    <feGaussianBlur stdDeviation="4" result="b"/>
+    <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+  <filter id="tinyGlow" x="-100%" y="-100%" width="300%" height="300%">
+    <feGaussianBlur stdDeviation="1.8"/>
+  </filter>
+  <filter id="softGlow" x="-100%" y="-100%" width="300%" height="300%">
+    <feGaussianBlur stdDeviation="18"/>
+  </filter>
+</defs>
+<defs>
+  <radialGradient id="brainGrad" cx="40%" cy="30%" r="80%">
+    <stop offset="0" stop-color="#E4D4FF" stop-opacity=".95"/>
+    <stop offset=".4" stop-color="#B98AFF" stop-opacity=".8"/>
+    <stop offset=".75" stop-color="#8B35FF" stop-opacity=".6"/>
+    <stop offset="1" stop-color="#221040" stop-opacity=".85"/>
+  </radialGradient>
+  <linearGradient id="eyeScleraGrad" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#1C2733" stop-opacity=".95"/>
+    <stop offset=".5" stop-color="#12161F" stop-opacity=".9"/>
+    <stop offset="1" stop-color="#0C0C14" stop-opacity=".95"/>
+  </linearGradient>
+  <radialGradient id="irisGrad" cx="50%" cy="50%" r="50%">
+    <stop offset="0" stop-color="#111119"/>
+    <stop offset=".3" stop-color="#122030" stop-opacity=".9"/>
+    <stop offset=".6" stop-color="#00D9FF" stop-opacity=".65"/>
+    <stop offset=".85" stop-color="#7DEFFF" stop-opacity=".85"/>
+    <stop offset="1" stop-color="#00D9FF"/>
+  </radialGradient>
+  <linearGradient id="eyeRay" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#00D9FF" stop-opacity="0"/>
+    <stop offset=".5" stop-color="#00D9FF" stop-opacity=".75"/>
+    <stop offset="1" stop-color="#00D9FF" stop-opacity="0"/>
+  </linearGradient>
+  <linearGradient id="heroV" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0" stop-color="#1B1430" stop-opacity=".9"/>
+    <stop offset=".5" stop-color="#221638" stop-opacity=".85"/>
+    <stop offset="1" stop-color="#181226" stop-opacity=".9"/>
+  </linearGradient>
+  <linearGradient id="titleV" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0" stop-color="#B98AFF"/>
+    <stop offset=".5" stop-color="#F2F2FA"/>
+    <stop offset="1" stop-color="#9B6CFF"/>
+  </linearGradient>
+</defs>
+<rect width="1664" height="936" fill="url(#bg)"/>
+<rect width="1664" height="936" fill="url(#grid)">
+  <animateTransform attributeName="transform" type="translate"
+    values="0 0;44 44;0 0" dur="22s" repeatCount="indefinite"/>
+</rect>
+<ellipse cx="499" cy="210" rx="520" ry="280" fill="url(#glowV)" filter="url(#softGlow)">
+  <animate attributeName="opacity" values=".65;1;.65" dur="9s" repeatCount="indefinite"/>
+</ellipse>
+<ellipse cx="1198" cy="760" rx="480" ry="260" fill="url(#glowP)" filter="url(#softGlow)">
+  <animate attributeName="opacity" values=".5;.85;.5" dur="11s" repeatCount="indefinite"/>
+</ellipse>
+<g fill="#00D9FF" filter="url(#tinyGlow)">
+  <circle cx="240" cy="150" r="1.6" opacity=".5"><animate attributeName="cy" values="150;132;150" dur="6s" repeatCount="indefinite"/></circle>
+  <circle cx="1420" cy="180" r="1.4" opacity=".4"><animate attributeName="cy" values="180;196;180" dur="7s" repeatCount="indefinite"/></circle>
+  <circle cx="480" cy="820" r="1.5" opacity=".35"><animate attributeName="cy" values="820;806;820" dur="8s" repeatCount="indefinite"/></circle>
+  <circle cx="1180" cy="840" r="1.3" opacity=".4"><animate attributeName="cy" values="840;856;840" dur="6.5s" repeatCount="indefinite"/></circle>
+</g>
+<g>
+  <rect x="30" y="28" width="1604" height="170" rx="16" fill="url(#heroV)" stroke="#8B35FF" stroke-opacity=".35"/>
+  <path d="M0 12 V0 H12 M1592 0 H1604 V12 M1604 158 V170 H1592 M12 170 H0 V158" fill="none" stroke="#8B35FF" stroke-width="1.5" stroke-opacity="0.5"/>
+  <path d="M-100 195L470 20 M160 205L730 20 M450 205L1020 20
+           M740 205L1310 20 M1030 205L1600 20 M1320 205L1890 20"
+        stroke="#8B35FF" stroke-opacity=".08" stroke-width="1.5">
+    <animateTransform attributeName="transform" type="translate" values="0 0;90 0;0 0" dur="10s" repeatCount="indefinite"/>
+  </path>
+  <g stroke-opacity=".9">
+    <g fill="none" stroke="#D500F9" stroke-opacity=".35" stroke-width="1.2">
+      <path d="M1180 82L1260 52L1340 95L1420 60L1510 110L1580 70"/>
+      <path d="M1210 150L1280 112L1360 142L1440 102L1530 150"/>
+      <path d="M1260 52L1280 112M1340 95L1360 142M1420 60L1440 102M1510 110L1530 150"/>
+    </g>
+    <g fill="#D500F9" filter="url(#tinyGlow)">
+      <circle cx="1180" cy="82" r="4"><animate attributeName="opacity" values=".3;1;.3" dur="2.1s" repeatCount="indefinite"/></circle>
+      <circle cx="1260" cy="52" r="4"><animate attributeName="opacity" values="1;.3;1" dur="1.8s" repeatCount="indefinite"/></circle>
+      <circle cx="1340" cy="95" r="4"><animate attributeName="opacity" values=".4;1;.4" dur="2.4s" repeatCount="indefinite"/></circle>
+      <circle cx="1420" cy="60" r="4"><animate attributeName="opacity" values=".5;1;.5" dur="1.6s" begin=".3s" repeatCount="indefinite"/></circle>
+      <circle cx="1510" cy="110" r="4"><animate attributeName="opacity" values=".3;1;.3" dur="2s" begin=".5s" repeatCount="indefinite"/></circle>
+      <circle cx="1580" cy="70" r="4"><animate attributeName="opacity" values="1;.4;1" dur="1.9s" begin=".2s" repeatCount="indefinite"/></circle>
+    </g>
+    <g fill="#00D9FF" filter="url(#tinyGlow)">
+      <circle cx="1210" cy="150" r="3"><animate attributeName="opacity" values=".4;1;.4" dur="2.2s" repeatCount="indefinite"/></circle>
+      <circle cx="1280" cy="112" r="3"><animate attributeName="opacity" values="1;.3;1" dur="1.7s" begin=".4s" repeatCount="indefinite"/></circle>
+      <circle cx="1360" cy="142" r="3"><animate attributeName="opacity" values=".4;1;.4" dur="2s" begin=".8s" repeatCount="indefinite"/></circle>
+      <circle cx="1440" cy="102" r="3"><animate attributeName="opacity" values=".5;1;.5" dur="1.8s" begin=".1s" repeatCount="indefinite"/></circle>
+      <circle cx="1530" cy="150" r="3"><animate attributeName="opacity" values=".4;1;.4" dur="2.3s" begin=".6s" repeatCount="indefinite"/></circle>
+    </g>
+  </g>
+  <circle cx="1370" cy="100" r="125" fill="none" stroke="#8B35FF" stroke-opacity=".18" stroke-width="1" stroke-dasharray="4 12">
+    <animateTransform attributeName="transform" type="rotate" from="0 1370 100" to="360 1370 100" dur="18s" repeatCount="indefinite"/>
+  </circle>
+</g>
+<text x="832" y="118" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="54" font-weight="800" letter-spacing="2" fill="url(#titleV)">
+  AI-NATIVE ENGINEERING
+  <animate attributeName="opacity" values=".85;1;.85" dur="4s" repeatCount="indefinite"/>
+</text>
+<text x="832" y="152" text-anchor="middle" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="12" letter-spacing="4" fill="#63637F">
+  INTELLIGENCE / RETRIEVAL / AUTOMATION / CONTEXT
+</text>
+<rect x="662" y="172" width="340" height="1.5" fill="#8B35FF" opacity=".5">
+  <animate attributeName="width" values="240;420;240" dur="5s" repeatCount="indefinite"/>
+  <animate attributeName="x" values="712;622;712" dur="5s" repeatCount="indefinite"/>
+</rect>
+<g font-family="ui-monospace, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace">
+  <text x="832" y="240" text-anchor="middle" fill="#8B35FF" font-size="10" letter-spacing="3">AI SYSTEM CORE</text>
+  <path d="M650 266H1014" stroke="#8B35FF" stroke-opacity=".22" stroke-width="2"/>
+  <path d="M650 266H1014" stroke="#D500F9" stroke-opacity=".7" stroke-width="1.5" stroke-dasharray="2 14">
+    <animate attributeName="stroke-dashoffset" values="0;-64" dur="1.4s" repeatCount="indefinite"/>
+  </path>
+  <circle cx="650" cy="266" r="5" fill="#D500F9" filter="url(#glow)">
+    <animate attributeName="r" values="3;8;3" dur="1.4s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="1014" cy="266" r="5" fill="#00D9FF" filter="url(#glow)">
+    <animate attributeName="r" values="3;8;3" dur="1.7s" repeatCount="indefinite"/>
+  </circle>
+</g>
+<g font-family="Arial, Helvetica, sans-serif"><g transform="translate(180 292)"><rect width="624" height="444" rx="16" fill="url(#panelV)" stroke="#8B35FF" stroke-opacity=".30"/><path d="M0 12 V0 H12 M610 0 H622 V12 M622 430 V442 H610 M12 442 H0 V430" fill="none" stroke="#8B35FF" stroke-width="1.5" stroke-opacity="0.5"/><rect x="28" y="26" width="26" height="2" fill="#8B35FF"/><text x="28" y="52" fill="#8B35FF" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="11" letter-spacing="3">01 / GENERATIVE INTELLIGENCE</text><g transform="translate(312 122)"><circle r="74" fill="url(#glowV)" opacity=".6"><animate attributeName="r" values="58;84;58" dur="4.5s" begin="0.0s" repeatCount="indefinite"/></circle><circle r="61" fill="none" stroke="#8B35FF" stroke-opacity=".22" stroke-dasharray="3 10"><animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="12s" repeatCount="indefinite"/></circle><g>
+  <animateTransform attributeName="transform" type="scale"
+    values="1 1;0.45 1;-1 1;-0.45 1;-1 1;-0.45 1;1 1;0.45 1;1 1"
+    keyTimes="0;0.125;0.25;0.375;0.5;0.625;0.75;0.875;1"
+    dur="14s" repeatCount="indefinite"/>
+  <g transform="scale(1.05)">
+    <path d="M -2,-32 C -22,-38 -36,-25 -38,-8 C -44,4 -38,18 -28,28 C -22,38 -10,42 -2,38 L -2,-32 Z"
+          fill="url(#brainGrad)" stroke="#8B35FF" stroke-width="1.4" stroke-opacity=".7" filter="url(#glow)"/>
+    <path d="M 2,-32 C 22,-38 36,-25 38,-8 C 44,4 38,18 28,28 C 22,38 10,42 2,38 L 2,-32 Z"
+          fill="url(#brainGrad)" stroke="#8B35FF" stroke-width="1.4" stroke-opacity=".7" filter="url(#glow)"/>
+    <path d="M 0,-32 Q -2,-5 0,5 Q 2,20 0,38" fill="none" stroke="#D500F9" stroke-width="1.2" stroke-opacity=".55"/>
+    <g fill="none" stroke="#8B35FF" stroke-width="0.9" stroke-opacity=".55">
+      <path d="M -22,-22 Q -14,-15 -8,-5 Q -5,5 -10,15"/>
+      <path d="M -28,-12 Q -18,-8 -12,2 Q -8,12 -14,22"/>
+      <path d="M -32,2 Q -22,8 -16,18 Q -12,28 -8,32"/>
+      <path d="M -15,-28 Q -10,-18 -5,-10 Q 0,-2 -2,8"/>
+    </g>
+    <g fill="none" stroke="#8B35FF" stroke-width="0.9" stroke-opacity=".55">
+      <path d="M 22,-22 Q 14,-15 8,-5 Q 5,5 10,15"/>
+      <path d="M 28,-12 Q 18,-8 12,2 Q 8,12 14,22"/>
+      <path d="M 32,2 Q 22,8 16,18 Q 12,28 8,32"/>
+      <path d="M 15,-28 Q 10,-18 5,-10 Q 0,-2 2,8"/>
+    </g>
+    <ellipse cx="-18" cy="-22" rx="10" ry="6" fill="#E4D4FF" opacity=".35" filter="url(#tinyGlow)"/>
+    <ellipse cx="18" cy="-22" rx="10" ry="6" fill="#E4D4FF" opacity=".35" filter="url(#tinyGlow)"/>
+    <g fill="#D9C7FF" filter="url(#tinyGlow)">
+      <circle cx="-15" cy="-20" r="2.5"><animate attributeName="opacity" values=".4;1;.4" dur="1.5s" repeatCount="indefinite"/></circle>
+      <circle cx="-25" cy="-5" r="2"><animate attributeName="opacity" values="1;.3;1" dur="1.9s" repeatCount="indefinite"/></circle>
+      <circle cx="-9" cy="12" r="2"><animate attributeName="opacity" values=".5;1;.5" dur="1.3s" begin=".4s" repeatCount="indefinite"/></circle>
+      <circle cx="15" cy="-20" r="2.5"><animate attributeName="opacity" values=".4;1;.4" dur="1.7s" begin=".2s" repeatCount="indefinite"/></circle>
+      <circle cx="25" cy="-5" r="2"><animate attributeName="opacity" values="1;.3;1" dur="2.1s" begin=".6s" repeatCount="indefinite"/></circle>
+      <circle cx="9" cy="12" r="2"><animate attributeName="opacity" values=".5;1;.5" dur="1.5s" begin=".8s" repeatCount="indefinite"/></circle>
+      <circle cx="0" cy="30" r="2"><animate attributeName="opacity" values=".4;1;.4" dur="1.6s" begin="1s" repeatCount="indefinite"/></circle>
+    </g>
+  </g>
+</g></g><text x="28" y="228" fill="#F2F2FA" font-size="28" font-weight="800">LLM APPLICATIONS</text><text x="28" y="252" fill="#63637F" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="10" letter-spacing="1.5">MODELS / PROMPTS / AGENTS / CONTEXT</text><g transform="translate(28 288)"><rect width="180" height="22" rx="6" fill="#111119" fill-opacity=".55" stroke="#8B35FF" stroke-opacity=".26"/><circle cx="13" cy="11" r="2.5" fill="#8B35FF"/><text x="22" y="15" fill="#A9A9C4" font-size="11">LangChain</text></g><g transform="translate(216 288)"><rect width="180" height="22" rx="6" fill="#111119" fill-opacity=".55" stroke="#8B35FF" stroke-opacity=".26"/><circle cx="13" cy="11" r="2.5" fill="#8B35FF"/><text x="22" y="15" fill="#A9A9C4" font-size="11">RAG Pipelines</text></g><g transform="translate(404 288)"><rect width="180" height="22" rx="6" fill="#111119" fill-opacity=".55" stroke="#8B35FF" stroke-opacity=".26"/><circle cx="13" cy="11" r="2.5" fill="#8B35FF"/><text x="22" y="15" fill="#A9A9C4" font-size="11">Vector DBs</text></g><g transform="translate(28 318)"><rect width="180" height="22" rx="6" fill="#111119" fill-opacity=".55" stroke="#8B35FF" stroke-opacity=".26"/><circle cx="13" cy="11" r="2.5" fill="#8B35FF"/><text x="22" y="15" fill="#A9A9C4" font-size="11">Prompt Engineering</text></g><g transform="translate(216 318)"><rect width="180" height="22" rx="6" fill="#111119" fill-opacity=".55" stroke="#8B35FF" stroke-opacity=".26"/><circle cx="13" cy="11" r="2.5" fill="#8B35FF"/><text x="22" y="15" fill="#A9A9C4" font-size="11">Fine-tuning</text></g><g transform="translate(404 318)"><rect width="180" height="22" rx="6" fill="#111119" fill-opacity=".55" stroke="#8B35FF" stroke-opacity=".26"/><circle cx="13" cy="11" r="2.5" fill="#8B35FF"/><text x="22" y="15" fill="#A9A9C4" font-size="11">Function Calling</text></g><line x1="28" y1="394" x2="596" y2="394" stroke="#26263A" stroke-width="1"/><text x="28" y="414" fill="#63637F" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="10" letter-spacing="2">DEPLOYMENT</text><text x="28" y="432" fill="#F2F2FA" font-size="13" font-weight="700">INFERENCE ONLINE</text><circle cx="592" cy="427" r="5" fill="#8B35FF" filter="url(#tinyGlow)"><animate attributeName="r" values="3;7;3" dur="1.7s" begin="0.0s" repeatCount="indefinite"/><animate attributeName="opacity" values=".45;1;.45" dur="1.7s" begin="0.0s" repeatCount="indefinite"/></circle><rect x="28" y="442" width="568" height="4" rx="2.0" fill="#26263A"/>
+<rect x="28" y="442" width="0" height="4" rx="2.0" fill="#8B35FF" filter="url(#tinyGlow)">
+  <animate attributeName="width" from="0" to="539" dur="1.6s" begin="0.4s" fill="freeze" calcMode="spline" keySplines="0.25 0.1 0.25 1"/>
+</rect>
+</g><g transform="translate(880 292)"><rect width="624" height="444" rx="16" fill="url(#panelB)" stroke="#00D9FF" stroke-opacity=".30"/><path d="M0 12 V0 H12 M610 0 H622 V12 M622 430 V442 H610 M12 442 H0 V430" fill="none" stroke="#00D9FF" stroke-width="1.5" stroke-opacity="0.5"/><rect x="28" y="26" width="26" height="2" fill="#00D9FF"/><text x="28" y="52" fill="#00D9FF" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="11" letter-spacing="3">02 / PERCEPTUAL INTELLIGENCE</text><g transform="translate(312 122)"><circle r="74" fill="url(#glowB)" opacity=".6"><animate attributeName="r" values="58;84;58" dur="4.5s" begin="0.5s" repeatCount="indefinite"/></circle><circle r="61" fill="none" stroke="#00D9FF" stroke-opacity=".22" stroke-dasharray="3 10"><animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="12s" repeatCount="indefinite"/></circle><g>
+  <g transform="scale(1.08)">
+    <path d="M -46,0 Q 0,-34 46,0 Q 0,34 -46,0 Z"
+          fill="url(#eyeScleraGrad)" stroke="#00D9FF" stroke-width="1.4" stroke-opacity=".6" filter="url(#glow)"/>
+    <path d="M -46,0 Q 0,-34 46,0 Q 0,34 -46,0 Z" fill="none" stroke="#D500F9" stroke-width="0.8" stroke-opacity=".28"/>
+    <circle r="17" fill="url(#irisGrad)" filter="url(#glow)"/>
+    <circle r="17" fill="none" stroke="#00D9FF" stroke-opacity=".55"/>
+    <circle r="6.5" fill="#0C0C14"/>
+    <circle cx="-4" cy="-6" r="2.2" fill="#EAFBFF" opacity=".85" filter="url(#tinyGlow)"/>
+    <rect x="-46" y="-9" width="92" height="18" fill="url(#eyeRay)" opacity=".5">
+      <animate attributeName="y" values="-9;9;-9" dur="4.2s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;.55;0" dur="4.2s" repeatCount="indefinite"/>
+    </rect>
+    <g fill="none" stroke="#00D9FF" stroke-opacity=".5">
+      <path d="M -58,-12 Q -46,-8 -46,0" >
+        <animate attributeName="stroke-opacity" values=".1;.6;.1" dur="2.4s" repeatCount="indefinite"/></path>
+      <path d="M 58,-12 Q 46,-8 46,0">
+        <animate attributeName="stroke-opacity" values=".6;.1;.6" dur="2.4s" repeatCount="indefinite"/></path>
+    </g>
+    <g fill="#7DEFFF" filter="url(#tinyGlow)">
+      <circle cx="-34" cy="-9" r="1.8"><animate attributeName="opacity" values=".3;1;.3" dur="2s" repeatCount="indefinite"/></circle>
+      <circle cx="34" cy="-9" r="1.8"><animate attributeName="opacity" values="1;.3;1" dur="2.3s" repeatCount="indefinite"/></circle>
+      <circle cx="0" cy="22" r="1.5"><animate attributeName="opacity" values=".4;1;.4" dur="1.8s" begin=".5s" repeatCount="indefinite"/></circle>
+    </g>
+  </g>
+</g></g><text x="28" y="228" fill="#F2F2FA" font-size="28" font-weight="800">VISION &amp; ML</text><text x="28" y="252" fill="#63637F" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="10" letter-spacing="1.5">IMAGES / VIDEO / PATTERNS / INFERENCE</text><g transform="translate(28 288)"><rect width="180" height="22" rx="6" fill="#111119" fill-opacity=".55" stroke="#00D9FF" stroke-opacity=".26"/><circle cx="13" cy="11" r="2.5" fill="#00D9FF"/><text x="22" y="15" fill="#A9A9C4" font-size="11">Image Processing</text></g><g transform="translate(216 288)"><rect width="180" height="22" rx="6" fill="#111119" fill-opacity=".55" stroke="#00D9FF" stroke-opacity=".26"/><circle cx="13" cy="11" r="2.5" fill="#00D9FF"/><text x="22" y="15" fill="#A9A9C4" font-size="11">Machine Vision</text></g><g transform="translate(404 288)"><rect width="180" height="22" rx="6" fill="#111119" fill-opacity=".55" stroke="#00D9FF" stroke-opacity=".26"/><circle cx="13" cy="11" r="2.5" fill="#00D9FF"/><text x="22" y="15" fill="#A9A9C4" font-size="11">OpenCV</text></g><g transform="translate(28 318)"><rect width="180" height="22" rx="6" fill="#111119" fill-opacity=".55" stroke="#00D9FF" stroke-opacity=".26"/><circle cx="13" cy="11" r="2.5" fill="#00D9FF"/><text x="22" y="15" fill="#A9A9C4" font-size="11">PyTorch</text></g><g transform="translate(216 318)"><rect width="180" height="22" rx="6" fill="#111119" fill-opacity=".55" stroke="#00D9FF" stroke-opacity=".26"/><circle cx="13" cy="11" r="2.5" fill="#00D9FF"/><text x="22" y="15" fill="#A9A9C4" font-size="11">TensorFlow</text></g><g transform="translate(404 318)"><rect width="180" height="22" rx="6" fill="#111119" fill-opacity=".55" stroke="#00D9FF" stroke-opacity=".26"/><circle cx="13" cy="11" r="2.5" fill="#00D9FF"/><text x="22" y="15" fill="#A9A9C4" font-size="11">Real-time Inference</text></g><line x1="28" y1="394" x2="596" y2="394" stroke="#26263A" stroke-width="1"/><text x="28" y="414" fill="#63637F" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="10" letter-spacing="2">DEPLOYMENT</text><text x="28" y="432" fill="#F2F2FA" font-size="13" font-weight="700">INFERENCE ONLINE</text><circle cx="592" cy="427" r="5" fill="#00D9FF" filter="url(#tinyGlow)"><animate attributeName="r" values="3;7;3" dur="1.7s" begin="0.3s" repeatCount="indefinite"/><animate attributeName="opacity" values=".45;1;.45" dur="1.7s" begin="0.3s" repeatCount="indefinite"/></circle><rect x="28" y="442" width="568" height="4" rx="2.0" fill="#26263A"/>
+<rect x="28" y="442" width="0" height="4" rx="2.0" fill="#00D9FF" filter="url(#tinyGlow)">
+  <animate attributeName="width" from="0" to="539" dur="1.6s" begin="0.7s" fill="freeze" calcMode="spline" keySplines="0.25 0.1 0.25 1"/>
+</rect>
+</g></g><g transform="translate(40 774)"><rect width="307" height="58" rx="10" fill="url(#panel)" stroke="#00D9FF" stroke-opacity=".3"/><rect width="3" height="58" rx="1.5" fill="#00D9FF" opacity=".85"/><text x="16" y="21" fill="#00D9FF" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="9.5" letter-spacing="2">PRESENTATION</text><g transform="translate(16 30)"><rect width="66" height="20" rx="6" fill="#111119" fill-opacity=".5" stroke="#00D9FF" stroke-opacity=".24"/><text x="33" y="14" text-anchor="middle" fill="#A9A9C4" font-size="9">React.js</text></g><g transform="translate(89 30)"><rect width="66" height="20" rx="6" fill="#111119" fill-opacity=".5" stroke="#00D9FF" stroke-opacity=".24"/><text x="33" y="14" text-anchor="middle" fill="#A9A9C4" font-size="9">Vue.js 3</text></g><g transform="translate(161 30)"><rect width="59" height="20" rx="6" fill="#111119" fill-opacity=".5" stroke="#00D9FF" stroke-opacity=".24"/><text x="30" y="14" text-anchor="middle" fill="#A9A9C4" font-size="9">Next.js</text></g></g><g transform="translate(359 774)"><rect width="307" height="58" rx="10" fill="url(#panel)" stroke="#8B35FF" stroke-opacity=".3"/><rect width="3" height="58" rx="1.5" fill="#8B35FF" opacity=".85"/><text x="16" y="21" fill="#8B35FF" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="9.5" letter-spacing="2">API GATEWAY</text><g transform="translate(16 30)"><rect width="84" height="20" rx="6" fill="#111119" fill-opacity=".5" stroke="#8B35FF" stroke-opacity=".24"/><text x="42" y="14" text-anchor="middle" fill="#A9A9C4" font-size="9">RESTful API</text></g><g transform="translate(107 30)"><rect width="59" height="20" rx="6" fill="#111119" fill-opacity=".5" stroke="#8B35FF" stroke-opacity=".24"/><text x="30" y="14" text-anchor="middle" fill="#A9A9C4" font-size="9">GraphQL</text></g><g transform="translate(174 30)"><rect width="66" height="20" rx="6" fill="#111119" fill-opacity=".5" stroke="#8B35FF" stroke-opacity=".24"/><text x="33" y="14" text-anchor="middle" fill="#A9A9C4" font-size="9">JWT Auth</text></g></g><g transform="translate(678 774)"><rect width="307" height="58" rx="10" fill="url(#panel)" stroke="#D500F9" stroke-opacity=".3"/><rect width="3" height="58" rx="1.5" fill="#D500F9" opacity=".85"/><text x="16" y="21" fill="#D500F9" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="9.5" letter-spacing="2">BUSINESS LOGIC</text><g transform="translate(16 30)"><rect width="59" height="20" rx="6" fill="#111119" fill-opacity=".5" stroke="#D500F9" stroke-opacity=".24"/><text x="30" y="14" text-anchor="middle" fill="#A9A9C4" font-size="9">Node.js</text></g><g transform="translate(82 30)"><rect width="103" height="20" rx="6" fill="#111119" fill-opacity=".5" stroke="#D500F9" stroke-opacity=".24"/><text x="51" y="14" text-anchor="middle" fill="#A9A9C4" font-size="9">Django/FastAPI</text></g><g transform="translate(192 30)"><rect width="72" height="20" rx="6" fill="#111119" fill-opacity=".5" stroke="#D500F9" stroke-opacity=".24"/><text x="36" y="14" text-anchor="middle" fill="#A9A9C4" font-size="9">C# (.NET)</text></g></g><g transform="translate(997 774)"><rect width="307" height="58" rx="10" fill="url(#panel)" stroke="#FFE500" stroke-opacity=".3"/><rect width="3" height="58" rx="1.5" fill="#FFE500" opacity=".85"/><text x="16" y="21" fill="#FFE500" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="9.5" letter-spacing="2">AI / ML</text><g transform="translate(16 30)"><rect width="59" height="20" rx="6" fill="#111119" fill-opacity=".5" stroke="#FFE500" stroke-opacity=".24"/><text x="30" y="14" text-anchor="middle" fill="#A9A9C4" font-size="9">PyTorch</text></g><g transform="translate(82 30)"><rect width="78" height="20" rx="6" fill="#111119" fill-opacity=".5" stroke="#FFE500" stroke-opacity=".24"/><text x="39" y="14" text-anchor="middle" fill="#A9A9C4" font-size="9">TensorFlow</text></g><g transform="translate(167 30)"><rect width="72" height="20" rx="6" fill="#111119" fill-opacity=".5" stroke="#FFE500" stroke-opacity=".24"/><text x="36" y="14" text-anchor="middle" fill="#A9A9C4" font-size="9">LangChain</text></g></g><g transform="translate(1316 774)"><rect width="307" height="58" rx="10" fill="url(#panel)" stroke="#00D9FF" stroke-opacity=".3"/><rect width="3" height="58" rx="1.5" fill="#00D9FF" opacity=".85"/><text x="16" y="21" fill="#00D9FF" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="9.5" letter-spacing="2">INFRASTRUCTURE</text><g transform="translate(16 30)"><rect width="53" height="20" rx="6" fill="#111119" fill-opacity=".5" stroke="#00D9FF" stroke-opacity=".24"/><text x="27" y="14" text-anchor="middle" fill="#A9A9C4" font-size="9">Docker</text></g><g transform="translate(76 30)"><rect width="78" height="20" rx="6" fill="#111119" fill-opacity=".5" stroke="#00D9FF" stroke-opacity=".24"/><text x="39" y="14" text-anchor="middle" fill="#A9A9C4" font-size="9">Kubernetes</text></g><g transform="translate(161 30)"><rect width="47" height="20" rx="6" fill="#111119" fill-opacity=".5" stroke="#00D9FF" stroke-opacity=".24"/><text x="24" y="14" text-anchor="middle" fill="#A9A9C4" font-size="9">Nginx</text></g></g><g font-family="ui-monospace, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="11" fill="#63637F" letter-spacing="3" opacity=".85" text-anchor="middle">
+  <circle cx="496" cy="912" r="2" fill="#8B35FF"/>
+  <text x="832" y="916">AI-NATIVE ARCHITECTURE // LAYERED // OBSERVABLE // RESILIENT</text>
+  <circle cx="1168" cy="912" r="2" fill="#8B35FF"/>
+</g>
+</svg>
